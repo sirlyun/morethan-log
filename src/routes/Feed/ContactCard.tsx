@@ -4,8 +4,8 @@ import {
   AiOutlineInstagram,
   AiOutlineGithub,
   AiOutlineMail,
-  AiFillLinkedin,
 } from "react-icons/ai"
+import { BiBrain } from "react-icons/bi";
 import styled from "@emotion/styled"
 
 const ContactCard: React.FC = () => {
@@ -40,18 +40,18 @@ const ContactCard: React.FC = () => {
             target="_blank"
             css={{ overflow: "hidden" }}
           >
-            <AiOutlineMail className="icon" />
+            <BiBrain className="icon" />
             <div className="name">email</div>
           </a>
         )}
-        {CONFIG.profile.linkedin && (
+        {CONFIG.profile.solved_ac && (
           <a
-            href={`https://www.linkedin.com/in/${CONFIG.profile.linkedin}`}
+            href={`https://solved.ac/profile/${CONFIG.profile.solved_ac}`}
             rel="noreferrer"
             target="_blank"
           >
             <AiFillLinkedin className="icon" />
-            <div className="name">linkedin</div>
+            <div className="name">solved.ac</div>
           </a>
         )}
       </StyledWrapper>
