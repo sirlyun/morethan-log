@@ -40,7 +40,7 @@ const ContactCard: React.FC = () => {
             target="_blank"
             css={{ overflow: "hidden" }}
           >
-            <BiBrain className="icon" />
+            <AiOutlineMail className="icon" />
             <div className="name">email</div>
           </a>
         )}
@@ -50,7 +50,7 @@ const ContactCard: React.FC = () => {
             rel="noreferrer"
             target="_blank"
           >
-            <AiFillLinkedin className="icon" />
+            <BiBrain className="icon" />
             <div className="name">solved.ac</div>
           </a>
         )}
